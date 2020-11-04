@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Facebook  1</string>
+
+    <string name="permission_denied">Permission denied, cannot complete action</string>
+    <string name="wv_menu_share_img">Sharing image…</string>
+    <string name="wv_menu_copy_link_to_clip">Link copied to clipboard</string>
+    <string name="wv_menu_save_image">Save image</string>
+    <string name="wv_menu_share_image">Share image</string>
+    <string name="wv_menu_copy_image_link">Copy image link</string>
+    <string name="wv_menu_share_link">Share link</string>
+    <string name="wv_menu_copy_link">Copy link</string>
+</resources>

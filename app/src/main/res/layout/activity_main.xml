@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true">
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#fafafa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="Social Network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <FrameLayout
+            android:layout_gravity="center|end"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/loading"
+                android:indeterminate="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <ImageView
+                android:alpha="0"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:id="@+id/bt_reload"
+                android:padding="10dp"
+                android:src="@drawable/ic_refresh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.kca.facebook1.QWebView
+        android:layout_below="@+id/top"
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
